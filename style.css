@@ -5,18 +5,29 @@
 }
 
 body{
-    background: linear-gradient(90deg,rgba(41, 230, 211, 1) 15%,
-     rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    background: linear-gradient(135deg, #8a2be2, #4b0082, #00b7eb, #ff00ff);
      min-height: 100vh;
 }
 
-
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
 header {
     display: flex;
-    background-color: linear-gradient(90deg,rgba(41, 230, 211, 1) 15%,
-    rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    background-color: linear-gradient(135deg, #8a2be2, #4b0082, #00b7eb, #ff00ff);
     justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 40px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2, #b4a7f5, #ff9cff);
+    background-clip: text;
+    color: transparent;
 }
 
 nav ul {
@@ -29,4 +40,13 @@ nav a {
     text-decoration: none;
     color: white;
 
+}
+
+.button{
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2, #b4a7f5, #ff9cff);
+    color:black;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
 }

@@ -1,3 +1,4 @@
+/* ---------------------------------------------- reset CSS---------------------------------------------- */
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +15,7 @@ body{
     margin: 0 auto;
     padding: 20px;
 }
-
+/* ---------------------------------------------header----------------------------------------------- */
 header {
     display: flex;
     background-color: linear-gradient(135deg, #8a2be2, #4b0082, #00b7eb, #ff00ff);
@@ -23,7 +24,7 @@ header {
 }
 
 .logo{
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 600;
     background: linear-gradient(135deg, #f5f7fa, #c3cfe2, #b4a7f5, #ff9cff);
     background-clip: text;
@@ -42,11 +43,164 @@ nav a {
 
 }
 
-.button{
+button{
     background: linear-gradient(135deg, #f5f7fa, #c3cfe2, #b4a7f5, #ff9cff);
-    color:black;
+    color: blueviolet;
     padding: 10px 20px;
     border-radius: 30px;
     border: none;
     outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
 }
+
+
+/* -------------------------------------------main-------------------------------------- */
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    margin-bottom: 50px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content h1{
+    font-size:  65px;
+   
+}
+.content h1 span{
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2, #b4a7f5, #ff9cff) ;
+    background-clip: text;
+    color: transparent;
+}
+
+.content p:nth-of-type(1) {
+    color: white;
+    font-size: 30px;
+}
+
+.content p:nth-of-type(2) {
+    color: white;
+    font-size: 20px;
+}
+.readMore{
+    
+    background: transparent;
+    border: 2px solid whitesmoke;
+    position: relative;
+    z-index: 1;
+    overflow: auto;
+}
+
+.start:hover{
+    transform: translateY(-3px);
+    box-shadow: 0px 9px 11px 0 rgba(195, 207, 226, 0.8);
+}
+
+/* pseudo */
+.readMore::before{
+    content: "";
+    position: absolute;
+    background:  linear-gradient(135deg, #f5f7fa, #c3cfe2, #b4a7f5, #ff9cff) ;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+.readMore:hover:before{
+    width: 100%;
+    
+}
+
+.image_container{
+    transform: scale(2.5);    
+   
+}
+
+/* -----------------------------Main2-------------------------------------- */
+
+.content2{
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -200px;
+    margin-left: -30px;
+    
+    
+}
+.content2 h1{
+    font-size: 40px ;
+}
+.DC{
+    display: flex;
+    gap: 20px;
+}
+
+
+.design{ 
+    border: 3px solid ;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2, #b4a7f5, #ff9cff);
+    color: blueviolet;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.coding{
+    border: 3px solid;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2, #b4a7f5, #ff9cff);
+    color: blueviolet;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.community{
+
+    border: 3px solid;
+    margin-top: 20px;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2, #b4a7f5, #ff9cff);
+    color: blueviolet;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+
+
+.content2 button{
+    font-size: 40px;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2, #b4a7f5, #ff9cff);
+    color: blueviolet;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+
+
+
+
+
